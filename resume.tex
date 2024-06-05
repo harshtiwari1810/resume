@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+% Author : Harsh Tiwari
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Harsh Tiwari} \\ \vspace{1pt}
+    \small 9119125222 $|$ 
+    \small harshtiwari1810@gmail.com $|$
+%    \href{harshtiwari1810@gmail.com}{\underline{E-Mail}} $|$ 
+    \href{https://linkedin.com/in/harsh-tiwari-410a76217}{\underline{Linkedin}} $|$
+    \href{https://github.com/harshtiwari1810}{\underline{Github}} $|$
+    \href{https://auth.geeksforgeeks.org/user/veryhaarsh/practice}{\underline{GeeksForGeeks}}
+\end{center}
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bennett University}{Greater Noida, UP}
+      {Bachelor of Technology in Computer Science}{2020 -- 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {iOS Developer}{April 2023 -- April 2024}
+      {Anacity by Anarock (formerly known as ApnaComplex)}{Bengaluru, Karnataka}
+      \resumeSubSubheading{\textbf{1. DLF SuperApp}}{}
+        \resumeItemListStart
+            \resumeItem{Built an entirely new networking layer from scratch using Alamofire and integrated API's to the frontend using the newly made networking layer}
+            \resumeItem{Responsible for integrating the WebView written in react to work smoothly with swift using the native iOS WebKit framework }
+            \resumeItem{Fixed issues and bugs raised by the QA in timely and efficient manner}
+            \resumeItem{Spent a lot of time building and perfecting the UI from scratch}
+        \resumeItemListEnd
+      \resumeSubSubheading{\textbf{2. Anacity}}{}
+        \resumeItemListStart
+            \resumeItem{Helped in resolving the issues when switching from XCode 13 to XCode 14}
+            \resumeItem{Added New feature wherein a User could increase or decrease the font size according to their needs}
+            \resumeItem{Listed all the hardcoded strings throughout the application and built a new localizable string file to help in adding Arabic to the app}
+            \resumeItem{Worked on refactoring the code and giving AccessibilityIdentifiers to elements to help Automate the UI testing of the application}
+            \resumeItem{Swtiched the networking layer of the application from native iOS URLSessions to Alamofire to improve the speed of the app}
+        \resumeItemListEnd
+      \resumeSubSubheading{\textbf{3. Dwell: Birla estates}}{}
+        \resumeItemListStart
+            \resumeItem{Built the entire UI from scratch and perfected it as QA reported the issues and bugs that came during the development}
+            \resumeItem{Built a Siri Shortcut for the application thereby giving the user another feature of Voice Command}
+            \resumeItem{Added a feature to apply Dark Mode throughout the entire application}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      % \resumeProjectHeading
+      %     {\textbf{PowerVocab} $|$ \emph{Python, Pycharm, KivyMD, Firebase}}\
+      %     \resumeItemListStart
+      %       \resumeItem{Developed an application using with Pycharm with Firebase helping in data storage}
+      %       \resumeItem{Used KivyMD to build UI of the application}
+      %       \resumeItem{The app was developed with an aim of helping user learn a word each day to improve vocabulary}
+      %       \resumeItem{The app also had a feature to learn to pronounce the word}
+      %     \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Ghar Dekho} $|$ \emph{Solidity, Hardhat, IPFS, Ethereum, React}}\
+          \resumeItemListStart
+            \resumeItem{Developed a RealEstate Dapp that lists properties for buying and renting in a particular area}
+            \resumeItem{Used IPFS to host files}
+            \resumeItem{Implemented the project with help of hardhat ethers}
+            \resumeItem{Used React framework on javascript to implement ethereum specific functions}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Parkoz} $|$ \emph{Flutter, Dart, Firebase, Trello}}\
+          \resumeItemListStart
+            \resumeItem{Built a parking application for car users as well as parking owners while discharging my duties as scrum master}
+            \resumeItem{Managed the project using Trello Kanban board}
+            \resumeItem{Used firebase to host files}
+            \resumeItem{Implemented the project using Flutter framework on Dart}
+            \resumeItem{Used agile methodology to develop the application}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Swift, Dart, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Frameworks}{: Flutter, React, Node.js,  WordPress, FastAPI, UIKit, WebKit, SiriKit} \\
+     \textbf{Developer Tools}{: XCode, BitBucket, Git, Trello, VS Code, Linux, MacOS} \\
+     \textbf{Libraries}{: Alamofire, Kingfisher, Pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+
+ %--------Achievements-----------------
+ \section{Certificates and Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{NVIDIA:}{Fundamentals of Accelerated Computing with CUDA Python} \\
+     \textbf{Udemy:}{Ethereum and Solidity: The Complete Developer's Guide} \\
+     \textbf{University at Buffalo (Coursera):}{ Smart Contracts, Decentralized Applications (Dapps)} \\
+     \textbf{Coursera:}{ Introduction to Bash Shell Scripting} \\
+     \textbf{Great Learning:}{ Data Structures, Statistical Methods for Decision Making, Probability for Data Science} \\
+     \textbf{Saylor.org :}{ Computer Communication and Networks} \\
+     \textbf{IELTS: }{Scored an overall band of 7.5 in September 2020} \\
+     \textbf{GeeksForGeeks: }{Ranked under 100 out of 5000 registered University Students on the platform}
+    }}
+ \end{itemize}
+
+
+ % %--------Subjects-----------------
+ % \section{Key Courses Taken}
+ % \begin{itemize}[leftmargin=0.15in, label={}]
+ %    \small{\item{
+ %     {Data Structures, Design and Analysis of Algorithm, Artificial Intelligence and Machine Learning, Information Management System, Computer Networks, Operating Systems, Software Engineering, Agile Software Development, Automata Theory and Computability, High Performance Computing, Introduction to Blockchain, Blockchain Engineering, Cyber Security with Blockchain}
+ %    }}
+ % \end{itemize}
+
+%-------------------------------------------
+\end{document}
